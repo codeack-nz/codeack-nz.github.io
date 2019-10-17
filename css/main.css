@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Consolas";
+    src: url(../font/Consolas.ttf) format("truetype");
+  }
+
+.logo {
+    padding: 5px;
+}
+
+.logo img {
+    width: 50%;
+    height: 50%;
+}
+
+.logo.short {
+    width: 75%;
+    height: 75%;
+}
+
+
+.logo-code {
+    color: #016db8;
+}
+
+.logo-paren {
+    color: #016db8;
+    font-weight: bold;
+}
+
+.logo-ack {
+    color: #6fad46;
+    font-family: 'Consolas';
+}
+
+.top-buffer {
+    padding: 5%;
+}
+
+.logo-background {
+    padding: 20px;
+}
+
+a {
+    color: #016db8 !important;
+    text-decoration: none !important;
+    padding: 5px;
+}
+
+a:hover {
+    color: #ffffff !important;
+    background-color: #6fad46 !important;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+li > a:hover {
+    border-radius: 5px;
+}
+
+button > a:hover {
+    border-radius: 5px;
+}
+
+.clicked {
+    color: #ffffff !important;
+    background-color: #6fad46 !important;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+button > a.clicked {
+    border-radius: 5px;
+}
+
+li > a.clicked {
+    border-radius: 5px;
+}
+
+.content {
+    margin:2px;
+    border-top: 1px #6fad46 solid;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: gray;
+}
+
+.header > div.logo-header > button  {
+    background-color: white !important;
+    border: none;
+}
+.header > div.logo-header > button > img {
+    width: 45px;
+}
+.header > div.logo-header > img {
+    width: 45px;
+}
