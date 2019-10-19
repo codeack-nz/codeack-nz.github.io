@@ -3,6 +3,8 @@
     src: url(../font/Consolas.ttf) format("truetype");
   }
 
+html,body { height: 100%; margin: 0px; padding: 0px; }
+
 .logo {
     padding: 5px;
 }
@@ -16,7 +18,6 @@
     width: 75%;
     height: 75%;
 }
-
 
 .logo-code {
     color: #016db8;
@@ -78,9 +79,12 @@ li > a.clicked {
     border-radius: 5px;
 }
 
+.full-height {
+    height: 100%;
+}
+
 .content {
-    margin:2px;
-    border-top: 1px #6fad46 solid;
+    display: block;
 }
 
 .header {
@@ -100,4 +104,19 @@ li > a.clicked {
 }
 .header > div.logo-header > img {
     width: 45px;
+}
+
+.footer {
+    background-color: #013459;
+    color: white;
+    font-size: 12px;
+}
+
+.footer > p {
+    padding: 10px;
+}
+
+.copy {
+    font-size: 12px;
+    background-color: #173042;
 }
