@@ -85,6 +85,15 @@ li > a.clicked {
 
 .content {
     display: block;
+    font-family: sans-serif;
+    padding: 10px !important;
+}
+
+.content-background {
+    border-top: 1px solid #6fad46;
+    background:linear-gradient(#6fad46 3%,#ffffff 10%,#ffffff);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .header {
@@ -119,4 +128,62 @@ li > a.clicked {
 .copy {
     font-size: 12px;
     background-color: #173042;
+}
+
+a.email {
+    background-color: #ffffff;
+}
+a:hover.email {
+    color: #6fad46 !important;
+    background-color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+h3 {
+    color: #ffffff !important;
+    font-weight: bolder !important;
+    margin-bottom: 20px !important;
+}
+
+h4 {
+    color: #013459 !important;
+}
+
+h5 {
+    color: #016db0 !important;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.fuzzy {
+    color: #0286e5;
+}
+
+p {
+    padding-left: 10px;
+}
+
+.currency {
+    font-family: "Consolas";
+}
+
+.fineprint {
+    color: #777777;
+    font-size: 10px;
+}
+
+.fineprint p {
+    color: #777777 !important;
+    font-size: 10px !important;
+}
+
+.fineprint-item {
+    color: #444444 !important;
+    font-weight: bold !important;
+}
+
+.heading-p {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
