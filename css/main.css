@@ -10,13 +10,13 @@ html,body { height: 100%; margin: 0px; padding: 0px; }
 }
 
 .logo img {
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
 }
 
-.logo.short {
-    width: 75%;
-    height: 75%;
+.logo-short img {
+    width: 35%;
+    height: 35%;
 }
 
 .logo-code {
