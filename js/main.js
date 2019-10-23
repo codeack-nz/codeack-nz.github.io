@@ -1,6 +1,7 @@
 $(function () {
 
     function selectItem(evtObj) {
+
         $('.js-master-container').removeClass('full-height');
         $('.js-link').removeClass('clicked');
         $(evtObj.currentTarget).addClass('clicked');
@@ -14,9 +15,11 @@ $(function () {
             selectItem(evtObj);
         });
 
-        $(obj).hover(function (evtObj) {
-            selectItem(evtObj);
-        });
+        if(! $(obj).hasClass('no-hover')) {
+            $(obj).hover(function (evtObj) {
+                selectItem(evtObj);
+            });
+        }
     });
 
     let logoTopConstant = $('.js-logo-container').position().top;

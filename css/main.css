@@ -102,6 +102,7 @@ li > a.clicked {
     width: 100%;
     background-color: white;
     box-shadow: gray;
+    z-index: 1000;
 }
 
 .header > div.logo-header > button  {
@@ -112,7 +113,7 @@ li > a.clicked {
     width: 45px;
 }
 .header > div.logo-header > img {
-    width: 45px;
+    width: 65px;
 }
 
 .footer {
