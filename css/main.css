@@ -91,7 +91,7 @@ li > a.clicked {
 
 .content-background {
     border-top: 1px solid #6fad46;
-    background:linear-gradient(#6fad46 3%,#ffffff 10%,#ffffff);
+    background:linear-gradient(#6fad46 3%,#ffffff 12%,#ffffff);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
