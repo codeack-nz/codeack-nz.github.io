@@ -172,18 +172,24 @@ p {
     font-size: 10px;
 }
 
-.fineprint p {
-    color: #777777 !important;
-    font-size: 10px !important;
-}
 
 .fineprint-item {
     color: #444444 !important;
     font-weight: bold !important;
 }
 
+.content-min-height {
+    min-height: 500px !important;
+}
+
 .heading-p {
     font-size: 12px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+sup > a:hover {
+    color:#6fad46 !important;
+    text-decoration: underline !important;
+    background-color: #ffffff !important;
 }
