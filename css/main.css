@@ -126,6 +126,10 @@ li > a.clicked {
     padding: 10px;
 }
 
+.footer > div > div > h4 {
+    color: #0286e5 !important; 
+}
+
 .copy {
     font-size: 12px;
     background-color: #173042;
