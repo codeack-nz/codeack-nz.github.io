@@ -51,8 +51,7 @@ a:hover {
     color: #ffffff !important;
     background-color: #6fad46 !important;
     padding: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
 }
 
 li > a:hover {
@@ -197,4 +196,14 @@ sup > a:hover {
     color:#6fad46 !important;
     text-decoration: underline !important;
     background-color: #ffffff !important;
+}
+
+.studio-style {
+ margin-top:30px;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-size: 24px;;
+}
+
+.platform-style {
+    font-family: 'Courier New', Courier, monospace;
 }
