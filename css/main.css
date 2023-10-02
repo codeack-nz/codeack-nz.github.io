@@ -204,6 +204,10 @@ sup > a:hover {
  font-size: 24px;;
 }
 
+.lighter {
+    color:#444444;
+}
+
 .platform-style {
     font-family: 'Courier New', Courier, monospace;
 }
