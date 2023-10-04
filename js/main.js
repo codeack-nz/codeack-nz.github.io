@@ -93,7 +93,23 @@ $(function () {
             let hg = $('.js-master-container').height() - 10;
             let tp = hg /2;
             let lf = wh /2;
+
+            if(wh < hg ) {
+                $('.js-more-info-content-container').addClass('display-portrait');
+                $('.js-more-info-content-container').removeClass('display-landscape');
+                $('.js-more-info-container').addClass('display-portrait');
+                $('.js-more-info-container').removeClass('display-landscape');  
+                console.log("Portrait");
+            } else {
+                $('.js-more-info-content-container').addClass('display-landscape');
+                $('.js-more-info-content-container').removeClass('display-portrait');
+                $('.js-more-info-container').addClass('display-landscape');
+                $('.js-more-info-container').removeClass('display-portrait');  
+                console.log("Landscape"); 
+            }
+
             console.log('Link clicked!', wh, hg);
+            resetFairyBall();
             $('.js-more-info-container').css({ 
                 width: wh,
                 height: hg,
@@ -109,14 +125,34 @@ $(function () {
      resetFairyBall();
 
      $(window).resize(function() {
+        console.log('Window resized!');
         resetFairyBall();
         resizeMoreInfo();
      });
 });
 
 function resizeMoreInfo() {
+
+    console.log('Resizing more-info');
+
     let wh = $('.js-master-container').width() - 10;
-    let hg = $('.js-master-container').height() - 10; 
+    let hg = $('.js-master-container').height() - 10;
+
+
+    if(wh < hg ) {
+        $('.js-more-info-content-container').addClass('display-portrait');
+        $('.js-more-info-content-container').removeClass('display-landscape');
+        $('.js-more-info-container').addClass('display-portrait');
+        $('.js-more-info-container').removeClass('display-landscape');  
+        console.log("Portrait");
+    } else {
+        $('.js-more-info-content-container').addClass('display-landscape');
+        $('.js-more-info-content-container').removeClass('display-portrait');
+        $('.js-more-info-container').addClass('display-landscape');
+        $('.js-more-info-container').removeClass('display-portrait');  
+        console.log("Landscape"); 
+    }
+
     $('.js-more-info-container').css({ 
         width: wh,
         height: hg
