@@ -411,5 +411,96 @@ sup > a:hover {
     animation-timing-function: linear;
 }
 
+@keyframes more-info-paper-scroll {
+    0% {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
+@keyframes more-info-fade-out {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
+.more-info-container {
+    position: absolute;
+    background-color: #e1ffe2;
+    visibility: hidden;
+    z-index: 2000;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    text-align: left; 
+    border-radius: 20px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }   
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.more-info-close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color:#6fad46;
+    filter: hue-rotate(123deg);
+    z-index: 3500;
+}
+
+.profile-container {
+    top: 0px;
+    right: 0px;
+    position: relative;
+}
+
+.profile-pic-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    right: 112px;
+    border:2px solid #6fad46;
+    background-color: #fff;
+    filter:drop-shadow(0px 0px 10px #6fad46); 
+}
+
+.profile-pic-image {
+    width: 120px;
+    height: 120px;
+}
+
+.profile-name {
+    position: absolute;
+    margin-top: 120px;
+    top: 55px;
+    right: 143px;
+}
+
+.content {
+    position: absolute;
+}
