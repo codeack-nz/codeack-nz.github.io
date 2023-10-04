@@ -224,16 +224,24 @@ sup > a:hover {
 
 
 
+.fairy-ball-container {
+    top: 0px;
+    left: 0px;
+    transition: top 3s ease-in-out, left 3s ease-in-out;
+    position: absolute;
+}
+
 .fairy-ball {
     background-color: #6fad46;
     width:10px;
     height:10px;
+    top: 0px;
+    left: 0px;
     border-radius: 20px;
-    position: absolute;
-    top: 100px;
-    left: 10px;
+    position: relative;
     box-shadow: inset 0px 0px 2px #6fad46;
     filter:drop-shadow(0px 0px 5px #6fad46);
+
 }
 
 @keyframes fairy-ball-dust {
@@ -298,12 +306,55 @@ sup > a:hover {
     animation-delay: 3000ms;
 }
 
+.fairy-ball > div:nth-child(8) {
+    top: -2px;
+    left: 0px;
+    animation-delay: 10ms;
+}
+
+.fairy-ball > div:nth-child(9) {
+    top: -1px;
+    left: 8px;
+    animation-delay: 500ms;
+}
+
+.fairy-ball > div:nth-child(10) {
+    top: -5px;
+    left: 4px;
+    animation-delay: 1000ms;
+}
+
+.fairy-ball > div:nth-child(11) {
+    top: +1px;
+    left: 1px;
+    animation-delay: 1500ms;
+}
+
+.fairy-ball > div:nth-child(12) {
+    top: +2px;
+    left: 5px;
+    animation-delay: 2000ms;
+}
+
+.fairy-ball > div:nth-child(13) {
+    top: -6px;
+    left: 4px;
+    animation-delay: 2200ms;
+}
+
+.fairy-ball > div:nth-child(14) {
+    top: +1px;
+    left: 5px;
+    animation-delay: 3000ms;
+}
+
+
 @keyframes fairy-ball-bounce {
-    0% { top: 98px}
-    25% { top: 100px}
-    50% { top: 102px}
-    75% { top: 100px}
-    100% {top: 98px}
+    0% { top: -2px}
+    25% { top: 0px}
+    50% { top: 2px}
+    75% { top: 0px}
+    100% {top: -2px}
 }
 
 .animate-ball {

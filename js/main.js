@@ -49,9 +49,12 @@ $(function () {
 
     $('.js-fairy-ball-magnet').each(function(idx, obj){
         $(obj).hover(function() {
-            let posY = obj.getBoundingClientRect().top + 15 + $(window).scrollTop();
-            let posX =  $($(obj).children()[0]).position().left - 25;
-            $('.js-fairy-ball-container').attr('style', 'top: ' + Math.round(posY) + 'px !important; left: ' + Math.round(posX) + 'px !important');
+            let posY = Math.round(obj.getBoundingClientRect().top + 15 + $(window).scrollTop());
+            let posX =  Math.round($($(obj).children()[0]).position().left - 25);
+            $('.js-fairy-ball-container').css({
+                top: posY,
+                left: posX,
+            }); 
         });
     });
 
@@ -63,8 +66,11 @@ $(function () {
 });
 
 function resetFairyBall() {
-    let posY = $('.js-fairy-ball-magnet-init').position().top + 15 + $(window).scrollTop();
-    let posX = $($('.js-fairy-ball-magnet-init').children()[0]).position().left - 25;
-    $('.js-fairy-ball-container').attr('style', 'top: ' + Math.round(posY) + 'px !important; left: ' + Math.round(posX) + 'px !important');
+    let posY = Math.round($('.js-fairy-ball-magnet-init').position().top + 15 + $(window).scrollTop());
+    let posX = Math.round($($('.js-fairy-ball-magnet-init').children()[0]).position().left - 25);
+    $('.js-fairy-ball-container').css({
+        top: posY,
+        left: posX
+    });
 }
 
