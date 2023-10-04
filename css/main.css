@@ -79,7 +79,7 @@ li > a.clicked {
 }
 
 .full-height {
-    height: 100%;
+    height: 80%;
 }
 
 .content {
@@ -131,7 +131,7 @@ li > a.clicked {
 
 .copy {
     font-size: 12px;
-    background-color: #173042;
+    background-color: #ffffff;
 }
 
 a.email {
@@ -198,6 +198,16 @@ sup > a:hover {
     background-color: #ffffff !important;
 }
 
+.footer {
+    background-color: #ffffff;
+    color: #383838;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .studio-style {
  margin-top:30px;
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -211,3 +221,97 @@ sup > a:hover {
 .platform-style {
     font-family: 'Courier New', Courier, monospace;
 }
+
+
+
+.fairy-ball {
+    background-color: #6fad46;
+    width:10px;
+    height:10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    box-shadow: inset 0px 0px 2px #6fad46;
+    filter:drop-shadow(0px 0px 5px #6fad46);
+}
+
+@keyframes fairy-ball-dust {
+    0% {visibility: hidden; opacity: 0;}
+    50% {visibility: visible; opacity: 1; top:+3px}
+    100% {visibility: hidden; opacity: 0;}
+}
+
+.fairy-ball > div {
+    visibility: hidden;
+    width: 2px;
+    height: 2px;
+    position: relative;
+    background-color: #6fad46;
+    border-radius: 20px;
+    animation-name: fairy-ball-dust;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.fairy-ball > div:nth-child(1) {
+    top: -13px;
+    left: 0px;
+    animation-delay: 10ms;
+}
+
+.fairy-ball > div:nth-child(2) {
+    top: -14px;
+    left: 8px;
+    animation-delay: 500ms;
+}
+
+.fairy-ball > div:nth-child(3) {
+    top: -13px;
+    left: 4px;
+    animation-delay: 1000ms;
+}
+
+.fairy-ball > div:nth-child(4) {
+    top: -13px;
+    left: 1px;
+    animation-delay: 1500ms;
+}
+
+.fairy-ball > div:nth-child(5) {
+    top: -13px;
+    left: 5px;
+    animation-delay: 2000ms;
+}
+
+.fairy-ball > div:nth-child(6) {
+    top: -12px;
+    left: 4px;
+    animation-delay: 2200ms;
+}
+
+.fairy-ball > div:nth-child(7) {
+    top: -11px;
+    left: 5px;
+    animation-delay: 3000ms;
+}
+
+@keyframes fairy-ball-bounce {
+    0% { top: 98px}
+    25% { top: 100px}
+    50% { top: 102px}
+    75% { top: 100px}
+    100% {top: 98px}
+}
+
+.animate-ball {
+    animation-name: fairy-ball-bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
