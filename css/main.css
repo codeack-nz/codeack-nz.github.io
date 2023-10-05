@@ -438,6 +438,14 @@ sup > a:hover {
     }
 }
 
+.topic-collapse {
+    position: absolute;
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
 .more-info-container {
     top:0px;
     left:0px;

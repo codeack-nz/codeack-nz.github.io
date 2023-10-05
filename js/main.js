@@ -93,14 +93,33 @@ $(function () {
     $('a').each(function(idx, obj) {
         $(obj).click(function() {
             
+            let topicList = [
+                'enterprise',
+                'about',
+                'pro-server',
+                'contact'
+            ];
+
+            topicList.forEach(function(val) {
+                console.log('Hiding '+ val);
+                $('.content.topic-'+val).addClass('topic-collapse');
+            });
+
             let wh = $('.js-master-container').width() - 10;
             let hg = $('.js-master-container').height() - 10;
             let tp = hg /2;
             let lf = wh /2;
 
+            let topic = $(this).attr('topic');
+
             resizeInfoSetClass(wh, hg);
 
             console.log('Link clicked!', wh, hg);
+            console.log('topic selected :', topic);
+
+
+            $('.content.topic-'+topic).removeClass('topic-collapse');
+
             resetFairyBall();
             $('.js-more-info-container').css({ 
                 width: wh,
@@ -110,7 +129,7 @@ $(function () {
                 opacity: 0,
                 'animation': 'more-info-paper-scroll 500ms ease-in',
                 'animation-fill-mode': 'forwards'
-            })
+            });
         });
     });
 
