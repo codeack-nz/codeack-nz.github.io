@@ -439,6 +439,10 @@ sup > a:hover {
 }
 
 .more-info-container {
+    top:0px;
+    left:0px;
+    width:0px;
+    height: 0px;
     position: absolute;
     background-color: #bce3ff;
     visibility: hidden;
@@ -462,11 +466,25 @@ sup > a:hover {
 }
 
 .more-info-close-button {
-    position: absolute;
+    position: sticky;
     top: 5px;
     right: 20px;
     color:#016db8;
     z-index: 3500;
+    text-align: right;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.more-info-close-button div.close-button {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    width:25px;
+    height:25px;
+    border-radius: 20px;
 }
 
 .profile-container {
@@ -585,7 +603,7 @@ sup > a:hover {
 }*/
 
 .content {
-    position: absolute;
+    /*position: absolute;*/
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -599,6 +617,10 @@ sup > a:hover {
 .content-title.display-portrait {
     text-align: center;
     margin-left: 0px;
+}
+
+.more-info-meta-container {
+    position: relative;
 }
 
 .content-title::first-letter {
