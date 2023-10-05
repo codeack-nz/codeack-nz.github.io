@@ -440,7 +440,7 @@ sup > a:hover {
 
 .more-info-container {
     position: absolute;
-    background-color: #e1ffe2;
+    background-color: #bce3ff;
     visibility: hidden;
     z-index: 2000;
     padding: 5px;
@@ -464,9 +464,8 @@ sup > a:hover {
 .more-info-close-button {
     position: absolute;
     top: 5px;
-    right: 10px;
-    color:#6fad46;
-    filter: hue-rotate(123deg);
+    right: 20px;
+    color:#016db8;
     z-index: 3500;
 }
 
@@ -481,13 +480,11 @@ sup > a:hover {
     height: 120px;
     border-radius: 200px;
     overflow: hidden;
-    position: absolute;
-    top: 50px;
-    right: 112px;
-    border:2px solid #6fad46;
+    border:2px solid #016db8;
     background-color: #fff;
-    filter:drop-shadow(0px 0px 10px #6fad46); 
-    float: right;
+    filter:drop-shadow(0px 0px 10px #016db8); 
+    float: left;
+    display: flex;
 }
 
 .profile-pic-image {
@@ -496,10 +493,48 @@ sup > a:hover {
 }
 
 .profile-name {
-    position: absolute;
-    margin-top: 120px;
-    top: 55px;
-    right: 143px;
+    text-align: center;
+}
+
+.profile-pic-flex-container.display-portrait {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.profile-pic-flex-container.display-landscape {
+    margin-bottom: 10px;
+}
+
+.profile-container.display-portrait {
+    justify-content: center !important;
+    align-content: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.profile-container.display-landscape {
+    justify-content: right !important;
+    align-items: right !important;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-right: 20px;
+    margin-left: 5px;
+    float: right;
+}
+
+.profile-container.display-landscape div.profile-name {
+    top: 10px;
+    right: 83px;
+}
+
+.profile-container.display-portrait div.profile-name {
+    top: 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .more-info-container.display-landscape {
@@ -531,23 +566,42 @@ sup > a:hover {
     background-color: #fff;
     opacity: 1;
     border-radius: 20px;
-    border: 1px solid #6fad46;
-    filter:drop-shadow(0px 0px 5px #6fad46);
+    border: 1px solid #016db8;
+    filter:drop-shadow(0px 0px 5px #016db8);
 }
 
 .content p {
-margin-right: 10px;
-
+    margin-right: 10px;
+    color: #3d3d3d;
 }
 
+/*
 .more-info-content-container.display-landscape  div.content p:nth-child(-n+2) {
     margin-right: 250px;
 }
 
 .more-info-content-container.display-portrait  div.content p:nth-child(-n+1) {
-    margin-right: 250px;
-}
+    margin-top: 250px;
+}*/
 
 .content {
     position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.content-title {
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.content-title.display-portrait {
+    text-align: center;
+    margin-left: 0px;
+}
+
+.content-title::first-letter {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
 }
