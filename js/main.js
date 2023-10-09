@@ -96,7 +96,7 @@ $(function () {
             let topicList = [
                 'enterprise',
                 'about',
-                'pro-server',
+                'pro-serve',
                 'contact'
             ];
 
