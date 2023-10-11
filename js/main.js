@@ -134,6 +134,7 @@ $(function () {
     });
 
      resetFairyBall();
+     resizeMoreInfo();
 
      $(window).resize(function() {
         console.log('Window resized!');
