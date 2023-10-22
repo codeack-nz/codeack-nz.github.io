@@ -695,7 +695,7 @@ sup > a:hover {
     width: 80%;
     height: 80%;
     position: absolute;
-    z-index: 100;
+    z-index: 0;
 }
 
 .pattern-oval {
