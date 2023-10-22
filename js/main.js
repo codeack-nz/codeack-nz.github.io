@@ -91,7 +91,8 @@ $(function () {
     });
 
     $('a').each(function(idx, obj) {
-        if ($(obj).attr('href') && $(obj).attr('href').startsWith('#')) {
+        if ($(obj).attr('href') && ( $(obj).attr('href').startsWith('#') 
+                                    || $(obj).attr('href').startsWith('mailto')) ) {
             return;
         }
 
