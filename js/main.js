@@ -91,6 +91,10 @@ $(function () {
     });
 
     $('a').each(function(idx, obj) {
+        if ($(obj).attr('href') && $(obj).attr('href').startsWith('#')) {
+            return;
+        }
+
         $(obj).click(function() {
             
             let topicList = [
@@ -101,7 +105,6 @@ $(function () {
             ];
 
             topicList.forEach(function(val) {
-                console.log('Hiding '+ val);
                 $('.content.topic-'+val).addClass('topic-collapse');
             });
 
@@ -113,10 +116,6 @@ $(function () {
             let topic = $(this).attr('topic');
 
             resizeInfoSetClass(wh, hg);
-
-            console.log('Link clicked!', wh, hg);
-            console.log('topic selected :', topic);
-
 
             $('.content.topic-'+topic).removeClass('topic-collapse');
 
@@ -137,7 +136,6 @@ $(function () {
      resizeMoreInfo();
 
      $(window).resize(function() {
-        console.log('Window resized!');
         resetFairyBall();
         resizeMoreInfo();
      });
@@ -151,6 +149,7 @@ function resizeInfoSetClass(wh, hg) {
         'js-more-info-container',
         'js-profile-container',
         'js-content-title',
+        'js-content-title-2',
         'js-profile-pic-flex-container'
     ];
 
@@ -159,19 +158,15 @@ function resizeInfoSetClass(wh, hg) {
             $('.' + val).addClass('display-portrait');
             $('.' + val).removeClass('display-landscape'); 
         });
-        console.log("Portrait");
     } else {
         classArray.forEach(function(val, idx) {
             $('.' + val).removeClass('display-portrait');
             $('.' + val).addClass('display-landscape'); 
         });  
-        console.log("Landscape"); 
     }
 }
 
 function resizeMoreInfo() {
-
-    console.log('Resizing more-info');
 
     let wh = $('.js-master-container').width() - 10;
     let hg = $('.js-master-container').height() - 10;

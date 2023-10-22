@@ -502,8 +502,6 @@ sup > a:hover {
 }
 
 .profile-pic-container {
-    width: 120px;
-    height: 120px;
     border-radius: 200px;
     overflow: hidden;
     border:2px solid #016db8;
@@ -620,12 +618,43 @@ sup > a:hover {
     margin-left: 10px;
     font-size: 24px;
     font-family: cursive;
+    color:#1a3243;
+}
+
+.content-title-2 {
+    margin-left: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #12639c !important;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.content-title-3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #016db0 !important;
+}
+
+.content ul>li {
+    font-weight: 500;
+}
+
+.content ul ul > li {
+    font-weight: 300; 
 }
 
 .content-title.display-portrait {
     text-align: center;
     margin-left: 0px;
 }
+
+.content-title-2.display-portrait {
+    text-align: center;
+    margin-left: 0px;
+}
+
+
 
 .more-info-meta-container {
     position: relative;
@@ -634,4 +663,16 @@ sup > a:hover {
 .content-title::first-letter {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
+}
+
+.green-tick-li {
+    color:#6fad46;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mini-title {
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #4e5961;
 }
