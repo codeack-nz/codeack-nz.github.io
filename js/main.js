@@ -118,6 +118,12 @@ $(function () {
             resizeInfoSetClass(wh, hg);
 
             $('.content.topic-'+topic).removeClass('topic-collapse');
+            $('.content.topic-'+topic).css({ height: 'auto'});
+            $('.js-more-info-content-container').scrollTop(0);
+
+            $('.js-more-info-content-container').css({
+                height: 'fit-content !important'
+            });
 
             resetFairyBall();
             $('.js-more-info-container').css({ 

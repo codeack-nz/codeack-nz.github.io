@@ -439,11 +439,14 @@ sup > a:hover {
 }
 
 .topic-collapse {
-    position: absolute;
-    visibility: hidden;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
+    position: absolute !important;
+    visibility: hidden !important;
+    top: 0px !important;
+    left: 0px !important;
+    opacity: 0 !important;
+    height: 0px !important;
+    width: 0px !important;
+    display: none;
 }
 
 .more-info-container {
@@ -675,4 +678,62 @@ sup > a:hover {
     font-weight: 600;
     font-family: sans-serif;
     color: #4e5961;
+}
+
+/**/
+.flower-background {
+    width: 200px;
+    height: 200px;
+    background-color: #fff; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pattern {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    z-index: 100;
+}
+
+.pattern-oval {
+    width: 80%;
+    height: 60%;
+    background: radial-gradient(circle at 50% 0, #6fad46, transparent); 
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(30deg);
+    opacity: .3;
+}
+
+.pattern-oval:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.pattern-oval.rotate-more:nth-child(2) {
+    transform: rotate(70deg);
+}
+
+.pattern-oval:nth-child(3) {
+    transform: rotate(110deg);
+}
+
+.pattern-center {
+    width: 20px;
+    height: 20px;
+    background: #016db8; 
+    position: absolute;
+    border-radius: 50%;
+    top: 30px;
+    left: 30px;
+    opacity: .2;
+    filter:drop-shadow(0px 0px 10px #016db8); 
+}
+
+.pattern-center.bigger {
+    width: 40px;
+    height: 40px;
+    opacity: .1;
 }
